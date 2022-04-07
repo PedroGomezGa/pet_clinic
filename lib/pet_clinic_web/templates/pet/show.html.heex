@@ -1,0 +1,21 @@
+<h1>Show Pet</h1>
+  <div class="card">
+  <div style="padding-top: 10%"><img class="foto" src="/images/perro.jpg"  alt="Pet"></div>  
+  <ul>
+    <li>
+      <h1>Nombre: <%= @pet.name %></h1>
+    </li>
+    <li>
+      <strong>Edad: <%= @pet.age %> years</strong>
+    </li>
+    <li>
+      <strong>Tipo: <%= @pet.type %></strong>
+    </li>
+    <li>
+      <strong>Sex:<%= @pet.sex %></strong>
+    </li>
+  </ul>
+  <br>
+<span><%= link "Editar", to: Routes.pet_path(@conn, :edit, @pet) %></span> |
+<span><%= link "Volver", to: Routes.pet_path(@conn, :index) %></span>
+</div>

@@ -1,0 +1,5 @@
+<h1>Edit Veterinarian</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.veterinarian_path(@conn, :update, @veterinarian)) %>
+
+<span><%= link "Back", to: Routes.veterinarian_path(@conn, :index) %></span>

@@ -1,0 +1,21 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(green 25%, white, rgb(16, 177, 137));
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  li {
+      text-align: center;
+  }
+
+  .foto {
+      border-radius: 50%;
+      width:50%;  
+  }

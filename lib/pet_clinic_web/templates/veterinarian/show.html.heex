@@ -1,0 +1,27 @@
+<h1>Show Veterinarian</h1>
+  <div class="card">
+  <div style="padding-top: 10%"><img src="/images/vet.png"  alt="John" style="width:50%;  "></div>  
+  <ul>
+    <li>
+      <h1>Nombre: <%= @veterinarian.name %></h1>
+    </li>
+    <li>
+      <strong>Edad: <%= @veterinarian.age %> years</strong>
+    </li>
+    <li>
+      <strong>Email: <%= @veterinarian.email %></strong>
+    </li>
+    <li>
+      <strong>Especialidad:</strong>
+    </li>
+  </ul>
+  <ul>
+    <li><%= @veterinarian.specialities %></li>
+  </ul>
+  <strong>Sex:</strong>
+  <%= @veterinarian.sex %>
+  <br>
+  <a class="back"><%= link "Editar", to: Routes.veterinarian_path(@conn, :edit, @veterinarian) %></a> |
+  <a class="back"><%= link "Volver", to: Routes.veterinarian_path(@conn, :index) %></a>
+</div>
+  
